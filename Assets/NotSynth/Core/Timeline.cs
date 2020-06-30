@@ -738,10 +738,8 @@ namespace NotSynth.Core {
 				LoadSRFile();
 			}
 
-			;
-
 			if (Input.GetKeyDown(KeyCode.Space) || togglePlaybackAction.stateDown) {
-				TogglePlayback();
+				 TogglePlayback();
 			}
 
 			if (joystickAction.axis.y > NSSettings.config.joystickDeadzone || joystickAction.axis.y < -NSSettings.config.joystickDeadzone) {

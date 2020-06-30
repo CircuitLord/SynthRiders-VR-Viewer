@@ -41,9 +41,9 @@ namespace NotSynth.VR {
 		private void Update() {
 
 
-			//leftGripping = SteamVR_Actions._default.Squeeze.GetAxis(SteamVR_Input_Sources.LeftHand) > gripStrength;
+			leftGripping = SteamVR_Actions._default.Squeeze.GetAxis(SteamVR_Input_Sources.LeftHand) > gripStrength;
 
-			//rightGripping = SteamVR_Actions._default.Squeeze.GetAxis(SteamVR_Input_Sources.RightHand) > gripStrength;
+			rightGripping = SteamVR_Actions._default.Squeeze.GetAxis(SteamVR_Input_Sources.RightHand) > gripStrength;
 
 			
 			HandleScaling();

@@ -27,6 +27,8 @@ namespace Valve.VR
         
         private static SteamVR_Action_Pose p_default_Pose;
         
+        private static SteamVR_Action_Single p_default_Squeeze;
+        
         public static SteamVR_Action_Boolean default_grab
         {
             get
@@ -67,6 +69,14 @@ namespace Valve.VR
             }
         }
         
+        public static SteamVR_Action_Single default_Squeeze
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_Squeeze.GetCopy<SteamVR_Action_Single>();
+            }
+        }
+        
         private static void InitializeActionArrays()
         {
             Valve.VR.SteamVR_Input.actions = new Valve.VR.SteamVR_Action[] {
@@ -74,13 +84,15 @@ namespace Valve.VR
                     SteamVR_Actions.default_togglePlayback,
                     SteamVR_Actions.default_joystick,
                     SteamVR_Actions.default_interactUI,
-                    SteamVR_Actions.default_Pose};
+                    SteamVR_Actions.default_Pose,
+                    SteamVR_Actions.default_Squeeze};
             Valve.VR.SteamVR_Input.actionsIn = new Valve.VR.ISteamVR_Action_In[] {
                     SteamVR_Actions.default_grab,
                     SteamVR_Actions.default_togglePlayback,
                     SteamVR_Actions.default_joystick,
                     SteamVR_Actions.default_interactUI,
-                    SteamVR_Actions.default_Pose};
+                    SteamVR_Actions.default_Pose,
+                    SteamVR_Actions.default_Squeeze};
             Valve.VR.SteamVR_Input.actionsOut = new Valve.VR.ISteamVR_Action_Out[0];
             Valve.VR.SteamVR_Input.actionsVibration = new Valve.VR.SteamVR_Action_Vibration[0];
             Valve.VR.SteamVR_Input.actionsPose = new Valve.VR.SteamVR_Action_Pose[] {
@@ -89,7 +101,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_grab,
                     SteamVR_Actions.default_togglePlayback};
             Valve.VR.SteamVR_Input.actionsSingle = new Valve.VR.SteamVR_Action_Single[] {
-                    SteamVR_Actions.default_interactUI};
+                    SteamVR_Actions.default_interactUI,
+                    SteamVR_Actions.default_Squeeze};
             Valve.VR.SteamVR_Input.actionsVector2 = new Valve.VR.SteamVR_Action_Vector2[] {
                     SteamVR_Actions.default_joystick};
             Valve.VR.SteamVR_Input.actionsVector3 = new Valve.VR.SteamVR_Action_Vector3[0];
@@ -98,7 +111,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_grab,
                     SteamVR_Actions.default_togglePlayback,
                     SteamVR_Actions.default_joystick,
-                    SteamVR_Actions.default_interactUI};
+                    SteamVR_Actions.default_interactUI,
+                    SteamVR_Actions.default_Squeeze};
         }
         
         private static void PreInitActions()
@@ -108,6 +122,7 @@ namespace Valve.VR
             SteamVR_Actions.p_default_joystick = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/default/in/joystick")));
             SteamVR_Actions.p_default_interactUI = ((SteamVR_Action_Single)(SteamVR_Action.Create<SteamVR_Action_Single>("/actions/default/in/interactUI")));
             SteamVR_Actions.p_default_Pose = ((SteamVR_Action_Pose)(SteamVR_Action.Create<SteamVR_Action_Pose>("/actions/default/in/Pose")));
+            SteamVR_Actions.p_default_Squeeze = ((SteamVR_Action_Single)(SteamVR_Action.Create<SteamVR_Action_Single>("/actions/default/in/Squeeze")));
         }
     }
 }

@@ -8,6 +8,7 @@
       <Path>Library/PackageCache/com.unity.ide.rider@1.2.1</Path>
       <Path>Library/PackageCache/com.unity.ide.vscode@1.1.4</Path>
       <Path>Library/PackageCache/com.unity.ide.vscode@1.2.0</Path>
+      <Path>Library/PackageCache/com.unity.ide.vscode@1.2.1</Path>
       <Path>Library/PackageCache/com.unity.postprocessing@2.2.2</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.core@7.2.1</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.core@7.3.1</Path>
@@ -19,6 +20,7 @@
       <Path>Library/PackageCache/com.unity.shadergraph@7.3.1</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.11</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.13</Path>
+      <Path>Library/PackageCache/com.unity.test-framework@1.1.14</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.0.1</Path>
       <Path>Library/PackageCache/com.unity.timeline@1.2.10</Path>
       <Path>Library/PackageCache/com.unity.xr.oculus.standalone@2.38.4</Path>
@@ -27,6 +29,7 @@
       <Path>ProjectSettings</Path>
     </explicitIncludes>
     <explicitExcludes>
+      <Path>.git</Path>
       <Path>.idea</Path>
       <Path>Library</Path>
       <Path>Logs</Path>

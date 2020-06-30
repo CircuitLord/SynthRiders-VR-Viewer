@@ -13,7 +13,24 @@
       "/actions/default" : {
          "chords" : [],
          "haptics" : [],
-         "poses" : [],
+         "poses" : [
+            {
+               "output" : "none",
+               "path" : "/user/hand/left/pose/base"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/right/pose/base"
+            },
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/hand/left/pose/raw"
+            },
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/hand/right/pose/raw"
+            }
+         ],
          "skeleton" : [],
          "sources" : [
             {
@@ -69,6 +86,24 @@
                },
                "mode" : "button",
                "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/squeeze"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/squeeze"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/grip"
             }
          ]
       },
@@ -83,7 +118,7 @@
    "category" : "steamvr_input",
    "controller_type" : "knuckles",
    "description" : "",
-   "name" : "My SREditorVR [Testing] configuration for Index Controller",
+   "name" : "knuckles_default",
    "options" : {},
    "simulated_actions" : []
 }

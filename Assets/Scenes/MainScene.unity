@@ -318,7 +318,7 @@ MonoBehaviour:
   hmdTrans: {fileID: 1487080994}
   _vrPlayerHolder: {fileID: 1624570103}
   scaleSpeed: 1
-  gripStrength: 0.3
+  gripStrength: 0.4
 --- !u!114 &174989168
 MonoBehaviour:
   m_ObjectHideFlags: 0
